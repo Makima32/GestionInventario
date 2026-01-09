@@ -2,7 +2,7 @@ package com.mycompany.models;
 
 public class Producto {
     
-    int id;
+    int sku;
     String nombre;
     int cantidad;
     double precio;
@@ -13,6 +13,14 @@ public class Producto {
         this.cantidad = cantidad;
         this.precio = precio;
         this.categoria = categoria;
+    }
+
+    public int getSku() {
+        return sku;
+    }
+
+    public void setSku(int sku) {
+        this.sku = sku;
     }
 
     public String getNombre() {
