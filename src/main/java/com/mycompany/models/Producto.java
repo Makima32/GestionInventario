@@ -1,26 +1,25 @@
 package com.mycompany.models;
 
-public class Producto {
+import java.io.Serializable;
+
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement 
+public class Producto implements Serializable{
     
-    int sku;
     String nombre;
     int cantidad;
     double precio;
     String categoria;
     
+
+    public Producto() {}
+
     public Producto(String nombre, int cantidad, double precio, String categoria) {
         this.nombre = nombre;
         this.cantidad = cantidad;
         this.precio = precio;
         this.categoria = categoria;
-    }
-
-    public int getSku() {
-        return sku;
-    }
-
-    public void setSku(int sku) {
-        this.sku = sku;
     }
 
     public String getNombre() {
