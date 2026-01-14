@@ -1,26 +1,30 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.mycompany.gestioninventario;
 
+import com.mycompany.view.InventarioFrame;
+
+import javax.swing.*;
+
 /**
+ * Clase principal de la aplicación de Gestión de Inventario
+ * Lanza la interfaz gráfica
  *
- * @author jefra
  */
 public class GestionInventario {
 
     public static void main(String[] args) {
-java.awt.EventQueue.invokeLater(new Runnable() {
+        // Configurar Look and Feel del sistema para mejor apariencia
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        // Lanzar la aplicación en el Event Dispatch Thread
+        java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                // Instanciamos tu JFrame
-                NewJFrame ventana = new NewJFrame();
-                
-                // Lo hacemos visible
+                InventarioFrame ventana = new InventarioFrame();
                 ventana.setVisible(true);
-                
-                // Opcional: Centrar la ventana en la pantalla
-                ventana.setLocationRelativeTo(null);
             }
-        });    }
+        });
+    }
 }
