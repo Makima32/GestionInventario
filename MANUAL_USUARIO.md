@@ -55,7 +55,7 @@ mvn exec:java
 
 Al iniciar la aplicación, se muestra la ventana principal con los siguientes elementos:
 
-![Ventana Principal](capturas/Captura desde 2026-01-15 18-45-10.png)
+![Ventana Principal](capturas/ventana_principal.png)
 
 **Elementos de la ventana:**
 - **Barra de herramientas** (superior): Botones de acción
@@ -94,7 +94,7 @@ La tabla muestra los productos con las siguientes columnas:
 5. Haga clic en **"Abrir"**
 6. Los productos se cargarán en la tabla
 
-![Diálogo Abrir Archivo](capturas/Captura desde 2026-01-15 18-46-11.png)
+![Diálogo Abrir Archivo](capturas/dialogo_abrir.png)
 
 **Formatos soportados:**
 - **CSV** (.csv) - Formato de texto con valores separados por comas
@@ -108,19 +108,19 @@ La tabla muestra los productos con las siguientes columnas:
 
 **Lectura de archivo CSV:**
 
-![Lectura CSV](capturas/Captura desde 2026-01-15 18-47-29.png)
+![Lectura CSV](capturas/lectura_csv.png)
 
 **Lectura de archivo JSON:**
 
-![Lectura JSON](capturas/Captura desde 2026-01-15 18-47-55.png)
+![Lectura JSON](capturas/lectura_json.png)
 
 **Lectura de archivo XML:**
 
-![Lectura XML](capturas/Captura desde 2026-01-15 18-48-23.png)
+![Lectura XML](capturas/lectura_xml.png)
 
 **Lectura de archivo DAT:**
 
-![Lectura DAT](capturas/Captura desde 2026-01-15 18-48-50.png)
+![Lectura DAT](capturas/lectura_dat.png)
 
 ### 5.2 Editar Productos en la Tabla
 
@@ -148,7 +148,7 @@ Si introduce un valor inválido, aparecerá un mensaje de error.
 4. Haga clic en **"Aceptar"** para añadir el producto
 5. O haga clic en **"Cancelar"** para cerrar sin guardar
 
-![Diálogo Añadir Producto](capturas/Captura desde 2026-01-15 18-49-24.png)
+![Diálogo Añadir Producto](capturas/dialogo_anadir.png)
 
 **Atajos de teclado:**
 - **Enter:** Confirma y añade el producto
@@ -161,7 +161,7 @@ Si introduce un valor inválido, aparecerá un mensaje de error.
 3. Aparecerá un diálogo de confirmación
 4. Haga clic en **"Sí"** para confirmar o **"No"** para cancelar
 
-![Diálogo Eliminar Producto](capturas/Captura desde 2026-01-15 18-49-56.png)
+![Diálogo Eliminar Producto](capturas/dialogo_eliminar.png)
 
 **Nota:** Si no hay ningún producto seleccionado, aparecerá un mensaje de advertencia.
 
@@ -177,7 +177,7 @@ Si introduce un valor inválido, aparecerá un mensaje de error.
 4. Escriba el nombre del archivo
 5. Haga clic en **"Guardar"**
 
-![Diálogo Guardar Archivo](capturas/Captura desde 2026-01-15 18-50-43.png)
+![Diálogo Guardar Archivo](capturas/dialogo_guardar.png)
 
 **Nota:** La aplicación añade automáticamente la extensión correcta si no la especifica.
 
@@ -185,33 +185,33 @@ Si introduce un valor inválido, aparecerá un mensaje de error.
 
 **Archivo CSV generado:**
 
-![Escritura CSV](capturas/Captura desde 2026-01-15 18-51-58.png)
+![Escritura CSV](capturas/escritura_csv.png)
 
-![Contenido CSV](capturas/Captura desde 2026-01-15 18-58-08.png)
+![Contenido CSV](capturas/contenido_csv.png)
 
 
 
 **Archivo JSON generado:**
 
-![Escritura JSON](capturas/Captura desde 2026-01-15 18-52-30.png)
+![Escritura JSON](capturas/escritura_json.png)
 
-![Contenido JSON](capturas/Captura desde 2026-01-15 18-59-08.png)
+![Contenido JSON](capturas/contenido_json.png)
 
 
 
 **Archivo XML generado:**
 
-![Escritura XML](capturas/Captura desde 2026-01-15 18-54-16.png)
+![Escritura XML](capturas/escritura_xml.png)
 
-![Contenido XML](capturas/Captura desde 2026-01-15 19-00-00.png)
+![Contenido XML](capturas/contenido_xml.png)
 
 
 
 **Archivo DAT generado:**
 
-![Escritura DAT](capturas/Captura desde 2026-01-15 18-56-34.png)
+![Escritura DAT](capturas/escritura_dat.png)
 
-![Contenido DAT](capturas/Captura desde 2026-01-15 19-01-26.png)
+![Contenido DAT](capturas/contenido_dat.png)
 
 ---
 
