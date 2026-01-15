@@ -10,6 +10,7 @@
 - [6. Tecnologías Utilizadas](#tecnologías-utilizadas)
 - [7. Arquitectura del Proyecto](#arquitectura-del-proyecto)
 - [8. Funcionalidades Implementadas](#funcionalidades-implementadas)
+- [9. Gestión del Proyecto en GitHub](#gestión-del-proyecto-en-github)
 
 ---
 
@@ -167,3 +168,31 @@ com.mycompany
 - Try-with-resources para cierre automático
 - Métodos reutilizables en controllers
 - Cada controller ejecutable independientemente (main propio)
+
+---
+
+## 9. Gestión del Proyecto en GitHub
+
+Se ha utilizado GitHub Projects para la gestión y seguimiento de tareas del proyecto.
+
+### Vista global del proyecto
+
+![Gestión del Proyecto](capturas/gestion_proyecto.png)
+
+### Tareas por colaborador
+
+**Tarea de Santiago:**
+
+![Tarea Santiago](capturas/gestion_proyecto_santiago.png)
+
+**Tarea de Enrique:**
+
+![Tarea Enrique](capturas/gestion_proyecto_enrique.png)
+
+**Tarea de Richard:**
+
+![Tarea Richard](capturas/gestion_proyecto_richard.png)
+
+**Tarea de Omar:**
+
+![Tarea Omar](capturas/gestion_proyecto_omar.png)
