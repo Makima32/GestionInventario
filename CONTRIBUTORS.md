@@ -2,18 +2,18 @@
 
 ## Índice
 
-- [Santiago - Modelos y Conversión CSV de entrada](#santiago---modelos-y-conversión-csv-de-entrada)
-- [Enrique - Conversiones CSV/JSON de salida](#enrique---conversiones-csvjson-de-salida)
-- [Richard - Conversiones JSON/XML de entrada y UI básica](#richard---conversiones-jsonxml-de-entrada-y-ui-básica)
-- [Omar - Conversiones XML de salida, utilidades e Integración UI](#omar---conversiones-xml-de-salida-utilidades-e-integración-ui)
-- [Resumen de Líneas de Código](#resumen-de-líneas-de-código)
-- [Tecnologías Utilizadas](#tecnologías-utilizadas)
-- [Arquitectura del Proyecto](#arquitectura-del-proyecto)
-- [Funcionalidades Implementadas](#funcionalidades-implementadas)
+- [1. Santiago - Modelos y Conversión CSV de entrada](#santiago---modelos-y-conversión-csv-de-entrada)
+- [2. Enrique - Conversiones CSV/JSON de salida](#enrique---conversiones-csvjson-de-salida)
+- [3. Richard - Conversiones JSON/XML de entrada y UI básica](#richard---conversiones-jsonxml-de-entrada-y-ui-básica)
+- [4. Omar - Conversiones XML de salida, utilidades e Integración UI](#omar---conversiones-xml-de-salida-utilidades-e-integración-ui)
+- [5. Resumen de Líneas de Código](#resumen-de-líneas-de-código)
+- [6. Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [7. Arquitectura del Proyecto](#arquitectura-del-proyecto)
+- [8. Funcionalidades Implementadas](#funcionalidades-implementadas)
 
 ---
 
-## SANTIAGO - Modelos y Conversión CSV de entrada
+## 1. [SANTIAGO] - Modelos y Conversión CSV de entrada
 **Responsabilidad:** Capa de datos y conversión CSV→Objetos
 
 ### Archivos desarrollados:
@@ -30,7 +30,7 @@ Conversor `CsvAObjeto` con un método público `convertir()` que lee archivos CS
 
 ---
 
-## ENRIQUE - Conversiones CSV/JSON de salida
+## 2. [ENRIQUE] - Conversiones CSV/JSON de salida
 **Responsabilidad:** Conversores Objetos→CSV y JSON→Objetos
 
 ### Archivos desarrollados:
@@ -44,7 +44,7 @@ Creación de `ObjetoACsv` que convierte una lista de productos a formato CSV. El
 
 ---
 
-## RICHARD - Conversiones JSON/XML de entrada y UI básica
+## 3. [RICHARD] - Conversiones JSON/XML de entrada y UI básica
 **Responsabilidad:** Conversores de salida JSON/XML y componentes de interfaz
 
 ### Archivos desarrollados:
@@ -54,7 +54,7 @@ Creación de `ObjetoACsv` que convierte una lista de productos a formato CSV. El
 - `src/main/java/com/mycompany/view/ProductoDialog.java`
 
 ### Descripción del trabajo:
-Desarrolló de `ObjetoAJson` que serializa listas de productos a formato JSON usando Gson. El método usa try-with-resources con `FileWriter`. También se desarrolló `XmlAObjeto` que usa JAXB Unmarshaller para leer archivos XML, deserializando el wrapper `ListaProductos` y extrayendo la lista de productos.
+Desarrollo de `ObjetoAJson` que serializa listas de productos a formato JSON usando Gson. El método usa try-with-resources con `FileWriter`. También se desarrolló `XmlAObjeto` que usa JAXB Unmarshaller para leer archivos XML, deserializando el wrapper `ListaProductos` y extrayendo la lista de productos.
 
 Modelo personalizado de la tabla (`ProductoTableModel`) extendiendo `AbstractTableModel`. Implementa toda la lógica de sincronización entre la lista de productos en memoria y la visualización, con métodos CRUD completos: `addProducto()`, `removeProducto()`, `setProductos()`, `getProductos()`.
 
@@ -64,7 +64,7 @@ Diálogo modal `ProductoDialog` con formulario de 4 campos para añadir producto
 
 ---
 
-## OMAR - Conversiones XML de salida, utilidades e Integración UI
+## 4. [OMAR] - Conversiones XML de salida, utilidades e Integración UI
 **Responsabilidad:** Conversor XML, helpers y ventana principal
 
 ### Archivos desarrollados:
@@ -96,7 +96,7 @@ Manejo de errores con mensajes claros.
 
 ---
 
-## Resumen de Líneas de Código
+## 5. Resumen de Líneas de Código
 
 | Compañero | Archivos | Controllers |
 |-----------|----------|-------------|
@@ -107,7 +107,7 @@ Manejo de errores con mensajes claros.
 
 ---
 
-## Tecnologías Utilizadas
+## 6. Tecnologías Utilizadas
 
 - **Java SE 17+**
 - **Swing** - Interfaz gráfica (JFrame, JTable, JDialog, JFileChooser)
@@ -119,7 +119,7 @@ Manejo de errores con mensajes claros.
 
 ---
 
-## Arquitectura del Proyecto
+## 7. Arquitectura del Proyecto
 
 ```
 com.mycompany
@@ -145,7 +145,7 @@ com.mycompany
 
 ---
 
-## Funcionalidades Implementadas
+## 8. Funcionalidades Implementadas
 
 ### Conversiones de Formato
 - CSV ↔ Objetos

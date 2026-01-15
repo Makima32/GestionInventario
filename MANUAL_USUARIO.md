@@ -55,22 +55,11 @@ mvn exec:java
 
 Al iniciar la aplicación, se muestra la ventana principal con los siguientes elementos:
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│  Gestión de Inventario                           [_][□][X]  │
-├─────────────────────────────────────────────────────────────┤
-│  [Abrir]  [Guardar]  [Añadir Producto]  [Eliminar Producto] │
-├─────────────────────────────────────────────────────────────┤
-│  ┌─────────────────────────────────────────────────────┐    │
-│  │ Nombre      │ Cantidad │ Precio    │ Categoría     │    │
-│  ├─────────────────────────────────────────────────────┤    │
-│  │ Laptop      │ 10       │ 899,99 €  │ Electrónica   │    │
-│  │ Teclado     │ 25       │ 29,99 €   │ Electrónica   │    │
-│  │ Silla       │ 15       │ 120,00 €  │ Muebles       │    │
-│  │ ...         │ ...      │ ...       │ ...           │    │
-│  └─────────────────────────────────────────────────────┘    │
-└─────────────────────────────────────────────────────────────┘
-```
+![Ventana Principal](capturas/Captura desde 2026-01-15 18-45-10.png)
+
+**Elementos de la ventana:**
+- **Barra de herramientas** (superior): Botones de acción
+- **Tabla de productos** (centro): Visualización y edición de datos
 
 ### 4.2 Barra de Herramientas
 
@@ -105,6 +94,8 @@ La tabla muestra los productos con las siguientes columnas:
 5. Haga clic en **"Abrir"**
 6. Los productos se cargarán en la tabla
 
+![Diálogo Abrir Archivo](capturas/Captura desde 2026-01-15 18-46-11.png)
+
 **Formatos soportados:**
 - **CSV** (.csv) - Formato de texto con valores separados por comas
 - **JSON** (.json) - Formato de intercambio de datos ligero
@@ -112,6 +103,24 @@ La tabla muestra los productos con las siguientes columnas:
 - **DAT** (.dat) - Formato binario de Java (serialización)
 
 **Nota:** La aplicación detecta automáticamente el formato por la extensión del archivo.
+
+#### Pruebas de lectura por formato:
+
+**Lectura de archivo CSV:**
+
+![Lectura CSV](capturas/Captura desde 2026-01-15 18-47-29.png)
+
+**Lectura de archivo JSON:**
+
+![Lectura JSON](capturas/Captura desde 2026-01-15 18-47-55.png)
+
+**Lectura de archivo XML:**
+
+![Lectura XML](capturas/Captura desde 2026-01-15 18-48-23.png)
+
+**Lectura de archivo DAT:**
+
+![Lectura DAT](capturas/Captura desde 2026-01-15 18-48-50.png)
 
 ### 5.2 Editar Productos en la Tabla
 
@@ -139,6 +148,8 @@ Si introduce un valor inválido, aparecerá un mensaje de error.
 4. Haga clic en **"Aceptar"** para añadir el producto
 5. O haga clic en **"Cancelar"** para cerrar sin guardar
 
+![Diálogo Añadir Producto](capturas/Captura desde 2026-01-15 18-49-24.png)
+
 **Atajos de teclado:**
 - **Enter:** Confirma y añade el producto
 - **Escape:** Cancela y cierra el formulario
@@ -147,11 +158,10 @@ Si introduce un valor inválido, aparecerá un mensaje de error.
 
 1. Seleccione el producto haciendo clic en su fila
 2. Haga clic en el botón **"Eliminar Producto"**
-3. Aparecerá un diálogo de confirmación:
-   ```
-   ¿Está seguro de eliminar el producto 'NombreProducto'?
-   ```
+3. Aparecerá un diálogo de confirmación
 4. Haga clic en **"Sí"** para confirmar o **"No"** para cancelar
+
+![Diálogo Eliminar Producto](capturas/Captura desde 2026-01-15 18-49-56.png)
 
 **Nota:** Si no hay ningún producto seleccionado, aparecerá un mensaje de advertencia.
 
@@ -167,7 +177,41 @@ Si introduce un valor inválido, aparecerá un mensaje de error.
 4. Escriba el nombre del archivo
 5. Haga clic en **"Guardar"**
 
+![Diálogo Guardar Archivo](capturas/Captura desde 2026-01-15 18-50-43.png)
+
 **Nota:** La aplicación añade automáticamente la extensión correcta si no la especifica.
+
+#### Pruebas de escritura por formato:
+
+**Archivo CSV generado:**
+
+![Escritura CSV](capturas/Captura desde 2026-01-15 18-51-58.png)
+
+![Contenido CSV](capturas/Captura desde 2026-01-15 18-58-08.png)
+
+
+
+**Archivo JSON generado:**
+
+![Escritura JSON](capturas/Captura desde 2026-01-15 18-52-30.png)
+
+![Contenido JSON](capturas/Captura desde 2026-01-15 18-59-08.png)
+
+
+
+**Archivo XML generado:**
+
+![Escritura XML](capturas/Captura desde 2026-01-15 18-54-16.png)
+
+![Contenido XML](capturas/Captura desde 2026-01-15 19-00-00.png)
+
+
+
+**Archivo DAT generado:**
+
+![Escritura DAT](capturas/Captura desde 2026-01-15 18-56-34.png)
+
+![Contenido DAT](capturas/Captura desde 2026-01-15 19-01-26.png)
 
 ---
 
@@ -288,17 +332,12 @@ Formato de serialización nativa de Java.
 ## 8. Consejos y Buenas Prácticas
 
 1. **Guarde frecuentemente:** Recuerde guardar los cambios para no perder información.
-
 2. **Use nombres descriptivos:** Al guardar, use nombres de archivo que describan el contenido.
-
 3. **Haga copias de seguridad:** Antes de hacer cambios importantes, guarde una copia del archivo original.
-
 4. **Formato recomendado:**
    - Para intercambio con otras aplicaciones: JSON o CSV
    - Para uso interno rápido: DAT
    - Para sistemas empresariales: XML
-
-5. **Edición masiva:** Si necesita editar muchos productos, puede ser más rápido editar directamente el archivo CSV con Excel y luego cargarlo.
 
 ---
 
