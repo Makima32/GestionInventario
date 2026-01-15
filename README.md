@@ -12,24 +12,6 @@ Aplicación de escritorio desarrollada en Java Swing para la gestión de inventa
 - **Guardar productos** en cualquier formato soportado
 - **Nombre personalizado** para los archivos guardados
 
-## Capturas de Pantalla
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  Gestión de Inventario                           [_][□][X]  │
-├─────────────────────────────────────────────────────────────┤
-│  [Abrir]  [Guardar]  [Añadir Producto]  [Eliminar Producto] │
-├─────────────────────────────────────────────────────────────┤
-│  ┌─────────────────────────────────────────────────────┐    │
-│  │ Nombre      │ Cantidad │ Precio    │ Categoría     │    │
-│  ├─────────────────────────────────────────────────────┤    │
-│  │ Laptop      │ 10       │ 899,99 €  │ Electrónica   │    │
-│  │ Teclado     │ 25       │ 29,99 €   │ Electrónica   │    │
-│  │ Silla       │ 15       │ 120,00 €  │ Muebles       │    │
-│  └─────────────────────────────────────────────────────┘    │
-└─────────────────────────────────────────────────────────────┘
-```
-
 ## Tecnologías
 
 - **Java SE 17+**
@@ -47,7 +29,7 @@ Aplicación de escritorio desarrollada en Java Swing para la gestión de inventa
 
 1. Clonar el repositorio:
 ```bash
-git clone https://github.com/tu-usuario/GestionInventario.git
+git clone https://github.com/Makima32/GestionInventario.git
 cd GestionInventario
 ```
 
